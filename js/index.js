@@ -30,6 +30,45 @@ for(let i=0; i < skills.length; i++){
     skill.textContent += skills[i];
 //we are adding the skill (<li>) into the skillsList (<ul>)
     skillsList.appendChild(skill);
-}
+} 
 
+//selecting the form by its name 
+let messageForm = document.getElementsByName('leave_message')[0];
 
+//Event listener on the form when submitted
+messageForm.addEventListener('submit', (event) => {
+    //prevent the bowser from reloading and refreshing the page which cause the information to be earased immediately after submission    
+    event.preventDefault();
+    //selecting the name,email,and message and returning the value. Do i need a input.value variable for each one?
+    const name= event.target.name.value;
+    const email= event.target.email.value;
+    const message= event.target.message.value;
+    console.log(name, email, message);
+//selecting the messages section by its ID. 
+    const messageSection= document.getElementById('messages');
+//selecting the UL element through the form id which is messages.
+    const messageList= messageSection.querySelector('ul');
+//creating an li element within the UL element. 
+    const newMessage = document.createElement('li');
+//    setting the new HTML in the LI element.The variables for email, name, and message are set at the beginning of the event handler
+    newMessage.innerHTML = `<a href= "mailto: ${email}">${name}</a> wrote: <span>${message}</span>`
+//creating a remove button 
+    const removeButton = document.createElement('button');
+//inserting the innerText of the button 'remove'.
+    removeButton.innerText = 'remove';
+//setting the type attribute to button
+    removeButton.type = 'button';
+//creating another event handler that actives the removal of a name (li) element with just a click
+    removeButton.addEventListener('click', ()=>{
+        //This is saying that when the remove button is clcked remove the li element. the remove button's parent element is LI element which is what will be removed. We are traversing from the button element to the li element.
+        const entry = removeButton.parentNode;
+        entry.remove();
+
+});
+//Adding the LI element to the UL
+    messageList.appendChild(newMessage);
+//adding the Remove button into the LI
+    newMessage.appendChild(removeButton);
+//resetting the form once its submitted.
+     messageForm.reset();
+});
