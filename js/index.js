@@ -30,10 +30,10 @@ for(let i=0; i < skills.length; i++){
     skill.textContent += skills[i];
 //we are adding the skill (<li>) into the skillsList (<ul>)
     skillsList.appendChild(skill);
-} 
+}
 
 //selecting the form by its name 
-let messageForm = document.getElementsByName('leave_message')[0];
+let messageForm = document.getElementsByName('leave_messages')[0];
 
 //Event listener on the form when submitted
 messageForm.addEventListener('submit', (event) => {
