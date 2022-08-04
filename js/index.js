@@ -50,6 +50,8 @@ messageForm.addEventListener('submit', (event) => {
     const messageList= messageSection.querySelector('ul');
 //creating an li element within the UL element. 
     const newMessage = document.createElement('li');
+
+    
 //    setting the new HTML in the LI element.The variables for email, name, and message are set at the beginning of the event handler
     newMessage.innerHTML = `<a href= "mailto: ${email}">${name}</a> wrote: <span>${message}</span>`
 //creating a remove button 
