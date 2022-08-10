@@ -6,16 +6,26 @@
     <body>
         <header>
             <h1>Welcome!</h1>
+            <!-- font for title sections; code from google fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com"> 
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+            <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+           <!-- end of font code from google fonts -->
+           <!-- font for infromtiaon within sections underneed the titles. -->
+           <link rel="preconnect" href="https://fonts.googleapis.com"> 
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+           <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">           
+            <!-- end of font code -->
+            <link rel="stylesheet" href="css/index.css"> 
         </header>
-<h2>My name is Kimberly Bayardo</h2>
 
 <section id="about">
     <h2>About Me:</h2>
-    <p>I am fairly new to this entire tech world and thus far, I am loving it! 
+    <p class="summary"> Hello, my name is Kimberly Bayardo. I am fairly new to this entire tech world and thus far, I am loving it! 
     I believe that through tech we could really change the world and connect communities. 
     I've always believed communication is key. Effective communication is extremely important
     in everything we do such as: interviews, communications in our workplace and relationships, 
-    and to interact with everyone around us, even strangers. I believe teach is now taking
+    and to interact with everyone around us, even strangers. I believe tech is now taking
     communication to another level. Connecting individuals from different backgrounds, cultures
     and creating this new world where we can come together and fight for what we believe is right.
     This is just one of the main reasons I decided to break into tech. So, welcome to my journey.
@@ -24,29 +34,38 @@
 
 <section id="experience">
         <h2>Experience:</h2>
-        <h3><a href = "https://www.nclifeline.org/project-life-living-in-freedom-from-exploitation" target"_blank"> <strong>North County Lifeline</strong></a></h3>
+        
+        <p class="summary">While I may not have much experience in the tech world, I do have lots of experience working alongside clients and collaborating with team members to achieve a goal. This is something that is crucial in order to successfully complete projects on time  and avoid duplicating work.  </p>
+        
+        <h3><a href = "https://www.nclifeline.org/project-life-living-in-freedom-from-exploitation" target"_blank"> <strong>North County Lifeline</strong></a><br>
+        <p>November 2019 - January 2022</p></h3>
+        
+        <p class="summary">As the <u>Housing Coordinator</u> my ultimate goal was to assist clients in achieving their goals while assisting them on becoming self-sufficient. While simultaneously working alongside clients, I was building and developing the housing program that would assist clients to get their basic needs met as well as secure long term housing. Below is a brief list of what i did in my time as the housing coordinator. </p>
+       
         <h4>Housing Program Coordinator</h4>
-        <ul>
-            <li>Complete intakes, process client applications, and coordinate interviews for the housing program.</li>
+
+        <ul class="duties">
+            <li class="description">Complete intakes, process client applications, and coordinate interviews for the housing program.</li>
             <li>Monitor cleanliness and conduct monthly cleanliness inspections while also checking client progress in housing.</li>
-            <li>Follow all legal and ethical guidelines per state and county requirements as well as maintain all program Policies
+            <li class="description">Follow all legal and ethical guidelines per state and county requirements as well as maintain all program Policies
                 & Procedures in accordance with North County housing laws.</li>
             <li>Assist with program design, service delivery, policy, and procedure development while also maintaining accurate
                 case records and program statistics in compliance with funding requirements and objectives.</li>
         </ul>
         
         <h4>Program Specialist</h4>
-        <ul>
-            <li>Provide trauma-informed emergency response services to newly identified victims of human trafficking alongside law enforcement agencies such as the San Diego Human Trafficking Taskforce and FBI.</li>
+        <p class="summary">As the <u>program specialist</u>, I collaborated with coworkers and community partners in order to ensure client were connected to services that would assist them become independent. Many of the community partners relied on information from the Program Specialists in order to provide appropriate services in various areas such as legal and mental health to name a few. Here is a list of a few things I did aside from what was previously mentioned. </p>
+        <ul class="duties">
+            <li class="description">Provide trauma-informed emergency response services to newly identified victims of human trafficking alongside law enforcement agencies such as the San Diego Human Trafficking Taskforce and FBI.</li>
             <li>Victim advocate and community partner at specialized San Diego Juvenile Court (RISE).</li>
-            <li>Assist survivors with intensive case management including; safety planning, crisis intervention, housing
+            <li class="description">Assist survivors with intensive case management including; safety planning, crisis intervention, housing
                 assistance, medical and dental care, job and life-skills training, and legal assistance through in-house programs
                 and by referrals</li>
         </ul>
 </section> 
 <section id="skills">
         <h2>Skills:</h2>
-        <ul>
+        <ul class="list-of-skills">
             
         </ul>
 
@@ -55,10 +74,10 @@
 
 <section id="connect">
     <h2>Connect:</h2>
-        <p> <a href = "https://github.com/kimberlybayardo" target"_blank"> <strong>GitHub</strong></a></p>
-        <p><strong>Email:</strong> <a href="mailto:kimberlybayardo@yahoo.com">kimberlybayardo@yahoo.com</a></p>
+        <p class="social"> <a href = "https://github.com/kimberlybayardo" target"_blank"> <strong>GitHub</strong></a></p>
+        <p class="social"><strong>Email:</strong> <a href="mailto:kimberlybayardo@yahoo.com">kimberlybayardo@yahoo.com</a></p>
 </section>
-<section>
+<section id="form-messages">
     <h2>Leave a Message:</h2>
     <form name="leave_messages">
         <label for="name">Name:</label><br>
@@ -68,15 +87,15 @@
         <input type="email" id="email" name="email" required="true"><br>
 
         <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required="true"></textarea>
+        <textarea id="message" name="message" required="true"></textarea><br>
 
-        <button type="submit"> Submit</button>
+        <button id="submit" type="submit"> Submit</button>
     </form>
 </section>
 
 <section id="messages">
     <h2>Messages</h2>
-    <ul>
+    <ul class="removeButton">
         
     </ul>
 
