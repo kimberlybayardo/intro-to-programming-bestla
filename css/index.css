@@ -1,0 +1,220 @@
+html{
+    font-size: 100%;
+}
+body{
+    background-color: #f08080;
+}
+/* Welcome */
+h1{
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color:white;
+    font-size: 4rem;
+    padding: .5em;
+}
+
+/* When you hover over the welcome it will enlarge */
+h1:hover {
+    top: 0;
+    left: 0;
+    font-size: 5em;
+}
+
+/* all paragraphs(about me, housing coordinator, program specialist) will be centered and the specific font specified */
+.summary{
+    text-align: right;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    line-height: 1.5em;
+    margin:1em
+
+}
+
+/* the h2 elements: About me, Expereince, Skills, Connect, leave a message, and Messages are all a specific font and to the right*/
+h2 {
+    text-align: left;
+    font-size:2.5em;
+    font-weight: bold;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+/* align the text and change the background/ text color of the about me section */
+#about{
+    padding: 3em;
+    background-color: white;
+    color:#f08080
+}
+
+
+/* experience section has an ID:experience (North County Lifeline) will have the following: */
+#experience{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size:1.5em;
+    line-height: 1.5em;
+    padding: 2.5em;  
+}
+
+/* putting a border on North County Lifeline to distinguish it from the paragraph on top */
+h3{
+    text-align: center; 
+    border: .063em solid white;
+    font-size: 1.5em
+
+}
+
+/*titles:housing coordinator and program specialist font size,*/
+h4{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center; 
+    line-height: 1em;
+
+}
+
+/* the job descriptions bullet points */
+.duties{
+    border: 1px solid white;
+    font-size:1.30em;
+    line-height: 1.5em;
+    padding-top:1.5em;
+}
+
+@media screen and (min-width:300px)and( max-width: 992px) and (orientation: portrait) {
+    .duties {
+      width: 50%;
+    }
+  }
+
+/* li elements using styled blocks of different color */
+.description{
+    background-color:#f6989a;
+}
+
+
+/* skills section. background and padding set*/
+#skills{
+    background-color:white;
+    padding: 2em;  
+}
+
+
+
+/* form section background and padding */
+#form-messages{
+    background-color:white;
+    padding:2em;
+
+}
+
+/* skills font amd color. Size already set in h2 selector */
+#skills{
+    font-family: 'Amatic SC', cursive;  
+    color:#f08080
+}
+
+
+/* list of skills font size and text align. */
+.list-of-skills li {
+    font-size:1.30em;
+}
+
+/* connect section */
+#connect{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    padding: 1em;    
+}
+/* font size and alignment of social media:github and email */
+.social{
+    text-align: center;
+    font-size:1.30em;
+}
+
+/* make sociel media bigger when we hover over it. */
+.social:hover {
+    top: 0;
+    left: 0;
+    font-size: 2em;
+}
+
+/* padding, color, and font for the leave a message form section */
+#form-messages{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;  
+    padding: 2em;  
+    color:#f08080
+}
+
+/* changing the font size of all the labels on the form.color*/
+label{
+    font-size:2em;
+    line-height: 1.5em;
+}
+
+/* editing the imputs within the form */
+input{
+    color: #f08080;
+    font-family: 'Amatic SC', cursive;  
+    font-size: 1.5em;
+    border-radius:.5em;
+    border-color:#f08080;
+
+}
+/* editing the textarea (message:) within the form */
+textarea{
+    color: #f08080;
+    font-family: 'Amatic SC', cursive;  
+    font-size: 1.5em;
+    border-radius: .5em;
+    border-color:#f08080;
+}
+
+/*submit button */
+#submit{
+    background-color: #f08080;
+    font-family: 'Amatic SC', cursive; 
+    font-size:1.5em;
+    color: white;
+    padding: 14px 30px
+}
+
+/* submit button */
+#submit:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*Messages section */
+#messages{
+    text-align: left;
+    font-family: 'Amatic SC', cursive; 
+    font-size:1.5em;
+    line-height: 1.5em; 
+    padding: 2em;  
+    color:white;
+}
+
+/* remove button */
+.removeButton button{
+    background-color: white;
+    font-family: 'Amatic SC', cursive; 
+    font-size:.8em;
+    color: #f08080;
+    padding: 1px 10px
+}
+
+/* remove button hover */
+.removeButton button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+footer{
+    font-family: 'Amatic SC', cursive;
+    font-size:1.5em;
+    color: white;
+}
+
+
+
+
+
