@@ -2,21 +2,33 @@
 <html>
     <head>
         <title>Kim's Portfolio</title>
+        <meta name=“viewport” content=“width-device-width, initial-scale-1”>
     </head>
     <body>
         <header>
-            <h1>Welcome!</h1>
             <!-- font for title sections; code from google fonts -->
             <link rel="preconnect" href="https://fonts.googleapis.com"> 
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
             <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
            <!-- end of font code from google fonts -->
-           <!-- font for infromtiaon within sections underneed the titles. -->
+           <!-- font for information within sections underneath the titles. -->
            <link rel="preconnect" href="https://fonts.googleapis.com"> 
            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">           
             <!-- end of font code -->
             <link rel="stylesheet" href="css/index.css"> 
+
+            <h1>Welcome!</h1>
+            <nav>
+		        <ul class="navigation-bar">
+			        <li class="nav-item"><a href="#">About</a></li>
+			        <li  class="nav-item"><a href="#">Experience</a></li>
+			        <li  class="nav-item"><a href="#">Skills</a></li>
+			        <li  class="nav-item"><a href="#">Connect</a></li>
+                 <li  class="nav-item"><a href="#">Leave a Message</a></li>
+		        </ul>
+            </nav>
+	</header><!--/.main-header-->   
         </header>
 
 <section id="about">
@@ -35,15 +47,15 @@
 <section id="experience">
         <h2>Experience:</h2>
         
-        <p class="summary">While I may not have much experience in the tech world, I do have lots of experience working alongside clients and collaborating with team members to achieve a goal. This is something that is crucial in order to successfully complete projects on time  and avoid duplicating work.  </p>
+        <div class="summary">While I may not have much experience in the tech world, I do have lots of experience working alongside clients and collaborating with team members to achieve a goal. This is something that is crucial in order to successfully complete projects on time  and avoid duplicating work.  </div>
         
         <h3><a href = "https://www.nclifeline.org/project-life-living-in-freedom-from-exploitation" target"_blank"> <strong>North County Lifeline</strong></a><br>
-        <p>November 2019 - January 2022</p></h3>
-        
-        <p class="summary">As the <u>Housing Coordinator</u> my ultimate goal was to assist clients in achieving their goals while assisting them on becoming self-sufficient. While simultaneously working alongside clients, I was building and developing the housing program that would assist clients to get their basic needs met as well as secure long term housing. Below is a brief list of what i did in my time as the housing coordinator. </p>
-       
-        <h4>Housing Program Coordinator</h4>
-
+        <div>November 2019 - January 2022</div></h3>
+               
+        <div class="flexbox-container">
+            <div class="job-section">
+        <h4 class="job-title">Housing Program Coordinator</h4>
+        <div class="summary">As the <u>Housing Coordinator</u> my ultimate goal was to assist clients in achieving their goals while assisting them on becoming self-sufficient. While simultaneously working alongside clients, I was building and developing the housing program that would assist clients to get their basic needs met as well as secure long term housing. Below is a brief list of what i did in my time as the housing coordinator.</div>
         <ul class="duties">
             <li class="description">Complete intakes, process client applications, and coordinate interviews for the housing program.</li>
             <li>Monitor cleanliness and conduct monthly cleanliness inspections while also checking client progress in housing.</li>
@@ -52,9 +64,10 @@
             <li>Assist with program design, service delivery, policy, and procedure development while also maintaining accurate
                 case records and program statistics in compliance with funding requirements and objectives.</li>
         </ul>
-        
-        <h4>Program Specialist</h4>
-        <p class="summary">As the <u>program specialist</u>, I collaborated with coworkers and community partners in order to ensure client were connected to services that would assist them become independent. Many of the community partners relied on information from the Program Specialists in order to provide appropriate services in various areas such as legal and mental health to name a few. Here is a list of a few things I did aside from what was previously mentioned. </p>
+        </div>
+        <div class="job-section">
+        <h4 class="job-title">Program Specialist</h4>
+        <div class="summary">As the <u>program specialist</u>, I collaborated with coworkers and community partners in order to ensure client were connected to services that would assist them become independent. Many of the community partners relied on information from the Program Specialists in order to provide appropriate services in various areas such as legal and mental health to name a few. Here is a list of a few things I did aside from what was previously mentioned. </div> 
         <ul class="duties">
             <li class="description">Provide trauma-informed emergency response services to newly identified victims of human trafficking alongside law enforcement agencies such as the San Diego Human Trafficking Taskforce and FBI.</li>
             <li>Victim advocate and community partner at specialized San Diego Juvenile Court (RISE).</li>
@@ -62,6 +75,8 @@
                 assistance, medical and dental care, job and life-skills training, and legal assistance through in-house programs
                 and by referrals</li>
         </ul>
+    </div>
+    </div>
 </section> 
 <section id="skills">
         <h2>Skills:</h2>
@@ -77,8 +92,14 @@
         <p class="social"> <a href = "https://github.com/kimberlybayardo" target"_blank"> <strong>GitHub</strong></a></p>
         <p class="social"><strong>Email:</strong> <a href="mailto:kimberlybayardo@yahoo.com">kimberlybayardo@yahoo.com</a></p>
 </section>
+<div class="form-wrap">
 <section id="form-messages">
+    
+    <div class="title">
     <h2>Leave a Message:</h2>
+    </div>
+
+    <div class="form">
     <form name="leave_messages">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required="true"><br>
@@ -91,7 +112,10 @@
 
         <button id="submit" type="submit"> Submit</button>
     </form>
+    </div>
+
 </section>
+</div>
 
 <section id="messages">
     <h2>Messages</h2>
