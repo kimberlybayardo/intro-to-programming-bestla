@@ -262,3 +262,11 @@ footer {
  }
 } 
 
+#projects {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+  border: 0.063em solid white;
+}
+

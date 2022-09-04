@@ -65,10 +65,55 @@ messageForm.addEventListener('submit', (event) => {
         entry.remove();
 
 });
-//Adding the LI element to the UL
+//Adding the LI element to the UL: New Message is the LI and the messageList is the UL
     messageList.appendChild(newMessage);
 //adding the Remove button into the LI
     newMessage.appendChild(removeButton);
 //resetting the form once its submitted.
      messageForm.reset();
 });
+
+
+//STEP ONE:
+//Create a new XMLHttpRequest object and store it in a variable named githubRequest
+var githubRequest = new XMLHttpRequest();
+
+
+// Call the open method on your githubRequest object and pass the necessary arguments
+//  1. method: the method of your request (in this case, "GET")
+//  2. url: the url of your request (in this case, "https://api.github.com/users/{GITHUB_USERNAME}/repos")
+githubRequest.open("GET", "https://api.github.com/users/kimberlybayardo/repos");
+
+//Finally, call the send method on your githubRequest object to actually send the request
+githubRequest.send();
+
+//STEP 2:
+// Below the last line of code you just wrote, add a "load" event listener on your githubRequest object and pass the necessary arguments
+// 1. event: the event that is being handled (in this case, "load")
+// 2. callback: the function that runs when this event occurs
+githubRequest.addEventListener('load', () => { 
+// Inside the callback function you just created, parse the response and store it in a variable named repositories
+// hint: JSON.parse(this.response)  
+let repositories = JSON.parse(githubRequest.response);
+    //Log the value of repositories in the console
+    console.log(repositories);
+//Using "DOM Selection", select the #projects section by id and store it in a variable named projectSection
+//Using "DOM Selection", query the projectSection (instead of the entire document) to find the <ul> element and store it in a variable named projectList
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul'); 
+
+//Create a for loop to iterate over your repositories Array, starting at index 0
+for(let i=0; i <repositories.length; i++){
+//create a new list item (li) element and store it in a variable named project
+    let project = document.createElement('li');
+ //set the inner text of your project variable to the current Array element's name property
+    project.innerText = repositories[i].name;
+//On the next line, append the project element to the projectList element
+//projectList is the UL element and project is the LI element.
+    projectList.appendChild(project);
+
+}
+});
+
+
+
