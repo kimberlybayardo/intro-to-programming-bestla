@@ -4,23 +4,15 @@ html {
 body {
   background-color: #f08080;
 }
-/* Welcome */
+
+
+
+/* ---------------HEADER----------------- */
 h1 {
   text-align: center;
   font-family: "Oleo Script Swash Caps", cursive;
   color: white;
   font-size: 4em;
-}
-
-/* Padding for all sections */
-h1,
-#about,
-#experience,
-#skills,
-#form-messages,
-#messages {
-  padding: 5px 10px;  
-  width: 100%;
 }
 
 /* When you hover over the welcome it will enlarge */
@@ -30,6 +22,9 @@ h1:hover {
   font-size: 5em;
 }
 
+
+
+/* --------------NAVIGATION BAR------------------ */
 .navigation-bar {
   justify-content: right;
   font-family: "Amatic SC", cursive;
@@ -49,7 +44,7 @@ h1:hover {
   background-color:white;
 }
 
-/* all paragraphs(about me, housing coordinator, program specialist) will be centered and the specific font specified */
+/* --------------PARAGRAPHS:ABOUT ME/HOUSING COORDINATOR/PROGRAM SPECIALIST----------- */
 .summary {
     text-align: left;
     font-family: "Amatic SC", cursive;
@@ -60,8 +55,7 @@ h1:hover {
   }
 
 
-
-/* the h2 elements: About me, Expereince, Skills, Connect, leave a message, and Messages are all a specific font and to the right*/
+/* --------------ALL H2 HEADINGS-------------- */
 h2 {
   text-align: left;
   font-size: 2.5em;
@@ -69,11 +63,25 @@ h2 {
   font-family: "Oleo Script Swash Caps", cursive;
 }
 
+/* -----------PADDING FOR ALL SECTIONS-------------------- */
+h1,
+#about,
+#experience,
+#skills,
+#form-messages,
+#messages {
+  padding: 5px 10px;  
+  width: 100%;
+}
+/* --------------ABOUT ME-------------------- */
+
 /* align the text and change the background/ text color of the about me section */
 #about {
   background-color: white;
   color: #f08080;
 }
+
+/* ----------EXPERIENCE SECTION------------- */
 
 /* experience section has an ID:experience (North County Lifeline) will have the following: */
 #experience {
@@ -125,6 +133,20 @@ h4 {
   background-color: #f6989a;
 }
 
+
+
+/* -------------PROJECTS SECTION---------------- */
+#projects {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+  border: 0.063em solid white;
+}
+
+
+/* -----------SKILLS SECTION----------------- */
+
 /* skills section. background skills font amd color. Size already set in h2 selector */
 #skills {
   background-color: white;
@@ -132,17 +154,14 @@ h4 {
   color: #f08080;
 }
 
-/* form section background and padding */
-#form-messages {
-  background-color: white;
-}
-
 /* list of skills font size and text align. */
 .list-of-skills li {
   font-size: 1.3em;
 }
 
-/* connect section */
+
+/* ---------CONNECT SECTION-------------------- */
+
 #connect {
   font-family: "Amatic SC", cursive;
   color: white;
@@ -161,8 +180,12 @@ h4 {
   font-size: 2em;
 }
 
+
+/* --------LEAVE A MESSAGE SECTION--------------- */
+
 /* padding, color, and font for the leave a message form section */
 #form-messages {
+  background-color: white;
   text-align: center;
   font-family: "Amatic SC", cursive;
   padding: 2em;
@@ -213,7 +236,9 @@ textarea {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*Messages section */
+
+
+/*----------------------MESSAGES SECTION--------------------- */
 #messages {
   text-align: left;
   font-family: "Amatic SC", cursive;
@@ -237,13 +262,15 @@ textarea {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* ---------------FOOTER-------------------- */
+
 footer {
   font-family: "Amatic SC", cursive;
   font-size: 1.5em;
   color: white;
 }
 
-
+/* ------------------MEDIA QUERIES--------------- */
 
   /* ensuring that the job section will wrap when then the screen is smaller */
 @media screen and (min-width:300px)and( max-width: 992px) and (orientation: portrait) {
