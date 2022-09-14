@@ -14,7 +14,7 @@ copyright.innerHTML = `Kimberly Bayardo ${thisYear}`;
 footer.appendChild(copyright);
 
 
-let skills = ["Bilingual", "JavaScript", "CSS", "HTML"];
+let skills = ["JavaScript", "CSS", "HTML"];
 
 //we are getting the Element with the ID skills
 let skillsSelection = document.getElementById('skills');
@@ -140,6 +140,7 @@ fetch("https://api.github.com/users/kimberlybayardo/repos")
             let project = document.createElement('li');
  //set the inner text of your project variable to the current Array element's name property
             project.innerText = load[i].name;
+            project.innerHTML = `<a href="${load[i].html_url} "target="_blank">${load[i].name}</a>`
 //On the next line, append the project element to the projectList element
 //projectList is the UL element and project is the LI element.
             projectList.appendChild(project);
